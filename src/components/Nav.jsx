@@ -8,19 +8,32 @@ const Nav = () => {
 
   return (
     <StyledNav className="nav">
+      <h3>Jay Kania</h3>
       <div className="links-container">
-        <a href="#">Home</a>
-        <a href="#" className="active">
+        {/* <a href="#">Home</a> */}
+        <a href="#about" className="active">
           About Me
         </a>
-        <a href="#">Skills</a>
-        <a href="#">Contact</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
       </div>
+      {/* <h3>Logo</h3> */}
     </StyledNav>
   );
 };
 
 const StyledNav = styled.nav`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  h3 {
+    color: #f26b4e;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+  }
   a {
     transition: all 0.3s ease;
     color: white;
@@ -36,9 +49,10 @@ const StyledNav = styled.nav`
   }
   .links-container {
     display: flex;
+    align-items: center;
     justify-content: center;
     a {
-      margin: 1rem 2rem;
+      margin: 0rem 1rem 0rem 1rem;
     }
   }
 `;

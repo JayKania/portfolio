@@ -2,8 +2,15 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-size: 14px;
 }
 body {
-  background: #232323;
   font-family: "Raleway", sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+  * {
+    font-size: 8px;
+  }
 }
