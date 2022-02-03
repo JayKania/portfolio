@@ -25,6 +25,7 @@ const StyledApp = styled.div`
   /* margin: 1rem 8rem 0rem 3rem; */
   /* border: 1px solid white; */
   .wrapper {
+    width: 100%;
     padding: 1rem 3rem 0rem 3rem;
     background: #232323;
   }

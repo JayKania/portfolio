@@ -36,6 +36,7 @@ const StyledImage = styled.div`
   /* margin-right: 5rem; */
   margin-top: 3rem;
   width: 25%;
+  overflow: visible;
   img {
     max-width: 100%;
     max-height: 100%;
@@ -52,11 +53,13 @@ const StyledTitle = styled.div`
   h3 {
     font-size: 4rem;
     color: #494949;
+    overflow-y: hidden;
   }
   h2 {
     font-size: 4rem;
     letter-spacing: 0.2rem;
     font-weight: 800;
+    overflow-y: hidden;
   }
   span {
     color: #f26b4e;
