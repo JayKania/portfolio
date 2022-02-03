@@ -94,7 +94,7 @@ const StyledExperienceContainer = styled.div`
   display: grid;
   grid-template-columns: 50% 50%;
   padding: 20px;
-  width: 90%;
+  /* width: 90%; */
   margin: 0 auto;
   padding-top: 3rem;
 
