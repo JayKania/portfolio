@@ -42,6 +42,7 @@ const StyledSkillsSection = styled.div`
   padding-top: 7rem;
   padding-bottom: 2rem;
   text-align: center;
+  background: #232323;
   .skills-wrapper {
     position: relative;
     width: fit-content;

@@ -11,7 +11,7 @@ const Nav = () => {
       <h3>Jay Kania</h3>
       <div className="links-container">
         {/* <a href="#">Home</a> */}
-        <a href="#about">About Me</a>
+        <a href="#about">About</a>
         <a href="#skills">Skills</a>
         <a href="#projects">Projects</a>
         <a href="#experience">Experience</a>
@@ -26,12 +26,14 @@ const StyledNav = styled.nav`
   display: flex;
   align-items: center;
   justify-content: space-between;
-
+  background: #232323;
+  padding: 2rem 2rem;
   h3 {
     color: #f26b4e;
     text-transform: uppercase;
     letter-spacing: 0.1rem;
     overflow: visible;
+    font-size: 1.4rem;
   }
 
   .links-container {
@@ -46,7 +48,7 @@ const StyledNav = styled.nav`
       text-transform: uppercase;
       letter-spacing: 0.1rem;
       overflow: visible;
-      margin: 0rem 1rem 0rem 1rem;
+      padding: 0rem 1rem 0rem 1rem;
       &:hover {
         color: #f26b4e;
       }

@@ -14,8 +14,8 @@ const AboutSection = () => {
         </h4>
         <br />
         <p className="bio">
-          Software Engineer with good problem solving skills and a strong team
-          player. Passionate about coding and learning new technologies.
+          I am a Software Engineer with good problem solving skills and a strong
+          team player. Passionate about coding and learning new technologies.
           Currently I am working as a Programmer Analyst Trainee at Cognizant
           Technology Services.
         </p>

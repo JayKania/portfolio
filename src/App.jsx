@@ -4,6 +4,8 @@ import Nav from "./components/Nav";
 import TitleSection from "./components/TitleSection";
 import AboutSection from "./components/AboutSection";
 import SkillsSection from "./components/SkillsSection";
+import ProjectsSection from "./components/ProjectsSection";
+import ExperienceSection from "./components/ExperienceSection";
 
 const App = () => {
   return (
@@ -14,6 +16,8 @@ const App = () => {
         <TitleSection />
         <AboutSection />
         <SkillsSection />
+        <ProjectsSection />
+        <ExperienceSection />
       </div>
     </StyledApp>
   );
@@ -26,8 +30,7 @@ const StyledApp = styled.div`
   /* border: 1px solid white; */
   .wrapper {
     width: 100%;
-    padding: 1rem 3rem 0rem 3rem;
-    background: #232323;
+    /* padding: 1rem 3rem 0rem 3rem; */
   }
   .line {
     width: 100%;

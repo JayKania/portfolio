@@ -8,12 +8,14 @@ const TitleSection = () => {
   return (
     <StyledTitleSection className="title-section">
       <StyledTitle className="title">
-        <h3>Hi, I'm a</h3>
-        <h2>Front End</h2>
+        <h3>Hello, I'm</h3>
+        <h2>A Software</h2>
         <h2>
           Developer<span>.</span>
         </h2>
-        <button>CONTACT ME</button>
+        <a href="#contact">
+          <button>CONTACT ME</button>
+        </a>
       </StyledTitle>
       <StyledImage className="image">
         <img src={Profile1} alt="" />
@@ -23,13 +25,14 @@ const TitleSection = () => {
 };
 
 const StyledTitleSection = styled.div`
-  margin-top: 7rem;
+  padding-top: 7rem;
   padding-bottom: 2rem;
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   height: fit-content;
   align-items: center;
   justify-content: space-around;
+  background: #232323;
 `;
 
 const StyledImage = styled.div`
@@ -37,6 +40,7 @@ const StyledImage = styled.div`
   margin-top: 3rem;
   width: 25%;
   overflow: visible;
+
   img {
     max-width: 100%;
     max-height: 100%;
@@ -49,17 +53,25 @@ const StyledImage = styled.div`
 `;
 
 const StyledTitle = styled.div`
-  line-height: 3.5rem;
+  line-height: 4rem;
+
   h3 {
     font-size: 4rem;
     color: #494949;
     overflow-y: hidden;
+    width: fit-content;
   }
   h2 {
+    height: fit-content;
+    width: fit-content;
     font-size: 4rem;
     letter-spacing: 0.2rem;
     font-weight: 800;
     overflow-y: hidden;
+  }
+  .name {
+    color: #f26b4e;
+    font-size: 3.5rem;
   }
   span {
     color: #f26b4e;
