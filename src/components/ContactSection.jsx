@@ -10,7 +10,7 @@ const ContactSection = () => {
           <h4>
             Call me On<i class="fas fa-mobile-alt" id="phone"></i>
           </h4>
-          <p>+91 9537003277</p>
+          <p>+91 999XXXXXXX</p>
         </div>
         <div className="detail">
           <h4>
