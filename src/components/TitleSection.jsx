@@ -50,6 +50,11 @@ const StyledImage = styled.div`
     transition: all 0.5s ease;
     box-shadow: 1px 1px 10px #f26b4e;
   }
+  @media screen and (max-width: 768px) {
+    img {
+      border: 3px solid #f26b4e;
+    }
+  }
 `;
 
 const StyledTitle = styled.div`
