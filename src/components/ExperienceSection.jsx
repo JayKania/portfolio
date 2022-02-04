@@ -63,7 +63,7 @@ const ExperienceSection = () => {
           </ul>
         </div>
       </StyledExperienceContainer>
-      <div class="custom-shape-divider-top-1643955628">
+      <div class="wave">
         <svg
           data-name="Layer 1"
           xmlns="http://www.w3.org/2000/svg"
@@ -102,7 +102,7 @@ const StyledExperienceSection = styled.div`
       transform: translateY(-50%) translateX(21%);
     }
   }
-  .custom-shape-divider-top-1643955628 {
+  .wave {
     position: absolute;
     top: 0;
     left: 0;
@@ -112,14 +112,14 @@ const StyledExperienceSection = styled.div`
     transform: rotate(180deg);
   }
 
-  .custom-shape-divider-top-1643955628 svg {
+  .wave svg {
     position: relative;
     display: block;
     width: calc(123% + 1.3px);
     height: 5rem;
   }
 
-  .custom-shape-divider-top-1643955628 .shape-fill {
+  .wave .shape-fill {
     fill: #1f1f1f;
   }
 `;

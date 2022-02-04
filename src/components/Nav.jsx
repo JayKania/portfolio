@@ -52,6 +52,7 @@ const StyledNav = styled.nav`
       &:hover {
         color: #f26b4e;
       }
+      border-left: 2px solid #f26b4e;
     }
   }
 `;

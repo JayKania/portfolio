@@ -9,18 +9,21 @@ const AboutSection = () => {
         <h2>About Me</h2>
       </div>
       <StyledDescription className="description">
-        <h4>
-          My name is <span>Jay Kania</span>
-        </h4>
+        <h4>My name is Jay Kania</h4>
         <br />
         <p className="bio">
-          I am a Software Engineer with good problem solving skills and a strong
-          team player. Passionate about coding and learning new technologies.
-          Currently I am working as a Programmer Analyst Trainee at Cognizant
-          Technology Services.
+          I am a Software Developer with good{" "}
+          <span>problem solving skills</span> and a strong
+          <span> team player</span>. <br />
+          Passionate about coding and learning new technologies. Currently I am
+          working as a Programmer Analyst Trainee at Cognizant Technology
+          Services. <br />I also have keen interest in learning the new{" "}
+          <span>web3 </span>
+          space which revolves around the concept of{" "}
+          <span>decentralization</span>.
         </p>
         <div className="education">
-          <h5>Education</h5>
+          <h4>Education</h4>
           <p>
             Bachelor of Technology in Information Technology,
             <br />
@@ -28,7 +31,7 @@ const AboutSection = () => {
           </p>
         </div>
       </StyledDescription>
-      <div class="custom-shape-divider-top-1643954812">
+      <div class="wave">
         <svg
           data-name="Layer 1"
           xmlns="http://www.w3.org/2000/svg"
@@ -75,8 +78,9 @@ const StyledAbout = styled.div`
   span {
     font-size: 1.4rem;
     color: #f26b4e;
+    /* opacity: 0; */
   }
-  .custom-shape-divider-top-1643954812 {
+  .wave {
     position: absolute;
     top: 0;
     left: 0;
@@ -85,14 +89,14 @@ const StyledAbout = styled.div`
     line-height: 0;
   }
 
-  .custom-shape-divider-top-1643954812 svg {
+  .wave svg {
     position: relative;
     display: block;
     width: calc(139% + 1.3px);
     height: 8rem;
   }
 
-  .custom-shape-divider-top-1643954812 .shape-fill {
+  .wave .shape-fill {
     fill: #232323;
   }
 `;
@@ -102,18 +106,17 @@ const StyledDescription = styled.div`
   .bio {
     margin: 0 auto;
     width: 40%;
-    text-align: justify;
+    /* text-align: left; */
     font-size: 1.2rem;
   }
   .education {
     padding: 2rem 2rem;
     width: 70%;
     margin: 0 auto;
-    text-align: center;
-    h5 {
+    h4 {
       color: #f26b4e;
       font-weight: bolder;
-      font-size: 1.3rem;
+      font-size: 2rem;
     }
     p {
       padding: 0.5rem;

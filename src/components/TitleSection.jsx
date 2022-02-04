@@ -37,7 +37,7 @@ const StyledTitleSection = styled.div`
 
 const StyledImage = styled.div`
   /* margin-right: 5rem; */
-  margin-top: 3rem;
+  /* margin-top: 3rem; */
   width: 25%;
   overflow: visible;
 
@@ -86,16 +86,6 @@ const StyledTitle = styled.div`
     cursor: pointer;
     letter-spacing: 0.1rem;
   }
-  /* @media screen and (max-width: 768px) {
-    line-height: 1.8rem;
-    h3,
-    h2 {
-      font-size: 2rem;
-    }
-    .img {
-      width: 20%;
-    }
-  } */
 `;
 
 export default TitleSection;

@@ -34,7 +34,7 @@ const SkillsSection = () => {
           <i class="fas fa-database fa-5x"></i>
         </div>
       </SkillsContainer>
-      <div class="custom-shape-divider-top-1643955366">
+      <div class="wave">
         <svg
           data-name="Layer 1"
           xmlns="http://www.w3.org/2000/svg"
@@ -75,7 +75,7 @@ const StyledSkillsSection = styled.div`
       transform: translateY(-50%) translateX(60%);
     }
   }
-  .custom-shape-divider-top-1643955366 {
+  .wave {
     position: absolute;
     top: 0;
     left: 0;
@@ -85,7 +85,7 @@ const StyledSkillsSection = styled.div`
     transform: rotate(180deg);
   }
 
-  .custom-shape-divider-top-1643955366 svg {
+  .wave svg {
     position: relative;
     display: block;
     width: calc(100% + 1.3px);
@@ -93,7 +93,7 @@ const StyledSkillsSection = styled.div`
     transform: rotateY(180deg);
   }
 
-  .custom-shape-divider-top-1643955366 .shape-fill {
+  .wave .shape-fill {
     fill: #1f1f1f;
   }
 `;

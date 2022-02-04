@@ -8,7 +8,47 @@ const ProjectsSection = () => {
         <h1>Projects</h1>
         <h2>Projects</h2>
       </div>
-      <div class="custom-shape-divider-top-1643955464">
+      <StyledProjectContainer className="project-container">
+        <div className="project">
+          <h2>Music Player</h2>
+          <p>
+            - A music player built with React Js and to demonstrate the use of
+            styledcomponets and sass.
+          </p>
+          <p className="tags">#react #styledComponents #sass</p>
+          <a href="https://github.com/JayKania/Music-Player" target={"_blank"}>
+            View on Github
+          </a>
+        </div>
+        <div className="project">
+          <h2>E-Voting</h2>
+          <p>
+            - A decentalized way of casting votes. It's a web app built with the
+            help of React Js on front and Ethereum Blockchain on the back.
+          </p>
+          <p className="tags">#react #ethereum #solidity</p>
+          <a href="https://github.com/JayKania/E-Voting" target={"_blank"}>
+            View on Github
+          </a>
+        </div>
+        <div className="project">
+          <h2>Budget App</h2>
+          <p>
+            - It's a simple budget tracking app devloped using Vanilla Js and
+            CSS without any use of libraries or frameworks. It's a part of 100
+            days of project challenge.
+          </p>
+          <p className="tags">#html #css #javascript</p>
+          <a
+            href="https://github.com/JayKania/The-Budget-App"
+            target={"_blank"}
+          >
+            View on Github
+          </a>
+        </div>
+        {/* <div className="project"></div> */}
+      </StyledProjectContainer>
+      <div class="wave">
         <svg
           data-name="Layer 1"
           xmlns="http://www.w3.org/2000/svg"
@@ -48,7 +88,7 @@ const StyledProjectsSection = styled.div`
       transform: translateY(-50%) translateX(62%);
     }
   }
-  .custom-shape-divider-top-1643955464 {
+  .wave {
     position: absolute;
     top: 0;
     left: 0;
@@ -57,7 +97,7 @@ const StyledProjectsSection = styled.div`
     line-height: 0;
   }
 
-  .custom-shape-divider-top-1643955464 svg {
+  .wave svg {
     position: relative;
     display: block;
     width: calc(134% + 1.3px);
@@ -65,8 +105,43 @@ const StyledProjectsSection = styled.div`
     transform: rotateY(180deg);
   }
 
-  .custom-shape-divider-top-1643955464 .shape-fill {
+  .wave .shape-fill {
     fill: #232323;
+  }
+`;
+
+const StyledProjectContainer = styled.div`
+  display: grid;
+  grid-template-columns: 50% 50%;
+  width: 80%;
+  margin: 2rem auto;
+  .project {
+    /* height: 100%; */
+    margin: 2rem;
+    padding-bottom: 2rem;
+    background: #232323;
+    box-shadow: 0 6px 6px -4px #f26b4e;
+    h2 {
+      padding: 2rem;
+      font-size: 2rem;
+      color: #f26b4e;
+    }
+    p {
+      padding-left: 2rem;
+      padding-right: 2rem;
+      padding-bottom: 2rem;
+      font-size: 1.2rem;
+    }
+    .tags {
+      color: #585858;
+    }
+    a {
+      padding-left: 2rem;
+      padding-right: 2rem;
+      text-decoration: none;
+      color: #f26b4e;
+      font-size: 1.5rem;
+    }
   }
 `;
 
