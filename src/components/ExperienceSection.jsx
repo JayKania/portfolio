@@ -166,6 +166,69 @@ const StyledExperienceContainer = styled.div`
       }
     }
   }
+  @media only screen and (max-width: 480px) {
+    .organization-name {
+      h2 {
+        font-size: 2rem;
+      }
+      h3 {
+        font-size: 2rem;
+      }
+      p {
+        font-size: 2rem;
+      }
+    }
+
+    .organization-desc {
+      ul {
+        li {
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+  @media only screen and (min-width: 481px) and (max-width: 820px) {
+    .organization-name {
+      h2 {
+        font-size: 1.8rem;
+      }
+      h3 {
+        font-size: 1.5rem;
+      }
+      p {
+        font-size: 1.5rem;
+      }
+    }
+
+    .organization-desc {
+      ul {
+        li {
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+  @media only screen and (min-width: 550px) and (max-width: 1180px) {
+    .organization-name {
+      h2 {
+        font-size: 1.5rem;
+      }
+      h3 {
+        font-size: 1.3rem;
+      }
+      p {
+        font-size: 1.3rem;
+      }
+    }
+
+    .organization-desc {
+      ul {
+        li {
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
 `;
 
 export default ExperienceSection;

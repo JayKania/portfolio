@@ -111,6 +111,9 @@ const StyledDescription = styled.div`
   text-align: center;
   background: #1f1f1f;
 
+  h4 {
+    background: #1f1f1f;
+  }
   .bio {
     background: #1f1f1f;
     margin: 0 auto;
@@ -118,12 +121,9 @@ const StyledDescription = styled.div`
     /* text-align: left; */
     font-size: 1.2rem;
   }
-  h4 {
-    background: #1f1f1f;
-  }
   .education {
     background: #1f1f1f;
-    padding: 2rem 2rem;
+    padding: 4rem 2rem;
     width: 70%;
     margin: 0 auto;
     h4 {
@@ -137,6 +137,74 @@ const StyledDescription = styled.div`
       padding: 0.5rem;
       text-align: center;
       font-size: 1.2rem;
+    }
+  }
+  // mobile
+  @media only screen and (max-width: 480px) {
+    h4 {
+      font-size: 2.5rem;
+    }
+    .bio {
+      font-size: 2rem;
+      width: 80%;
+      span {
+        font-size: 2rem;
+      }
+    }
+    .education {
+      width: 80%;
+      h4 {
+        font-size: 2.5rem;
+      }
+      p {
+        font-size: 2rem;
+      }
+    }
+  }
+
+  // tablet
+  @media only screen and (min-width: 481px) and (max-width: 820px) {
+    h4 {
+      font-size: 2rem;
+    }
+    .bio {
+      font-size: 1.5rem;
+      width: 80%;
+      span {
+        font-size: 1.5rem;
+      }
+    }
+    .education {
+      width: 80%;
+      h4 {
+        font-size: 2rem;
+      }
+      p {
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+  // tablet portrait mode
+  @media only screen and (min-width: 550px) and (max-width: 1180px) {
+    h4 {
+      font-size: 2rem;
+    }
+    .bio {
+      font-size: 1.5rem;
+      width: 80%;
+      span {
+        font-size: 1.5rem;
+      }
+    }
+    .education {
+      width: 80%;
+      h4 {
+        font-size: 2rem;
+      }
+      p {
+        font-size: 1.5rem;
+      }
     }
   }
 `;

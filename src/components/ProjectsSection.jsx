@@ -127,6 +127,7 @@ const StyledProjectContainer = styled.div`
     padding-bottom: 2rem;
     background: #232323;
     box-shadow: 0 6px 6px -4px #f26b4e;
+    border-radius: 10px;
     h2 {
       padding: 2rem;
       font-size: 2rem;
@@ -147,6 +148,54 @@ const StyledProjectContainer = styled.div`
       text-decoration: none;
       color: #f26b4e;
       font-size: 1.5rem;
+    }
+  }
+  @media only screen and (max-width: 480px) {
+    grid-template-columns: 100%;
+    .project {
+      margin: 2rem auto;
+      width: 80%;
+      h2 {
+        font-size: 2.5rem;
+      }
+      p {
+        font-size: 2rem;
+      }
+      a {
+        font-size: 2rem;
+      }
+    }
+  }
+  @media only screen and (min-width: 481px) and (max-width: 820px) {
+    grid-template-columns: 100%;
+    .project {
+      margin: 2rem auto;
+      width: 90%;
+      h2 {
+        font-size: 2.5rem;
+      }
+      p {
+        font-size: 2rem;
+      }
+      a {
+        font-size: 2rem;
+      }
+    }
+  }
+  @media only screen and (min-width: 550px) and (max-width: 1180px) {
+    /* grid-template-columns: 50%; */
+    .project {
+      margin: 2rem auto;
+      width: 90%;
+      h2 {
+        font-size: 2rem;
+      }
+      p {
+        font-size: 1.35rem;
+      }
+      a {
+        font-size: 1.35rem;
+      }
     }
   }
 `;

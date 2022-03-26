@@ -10,9 +10,17 @@
 body {
   font-family: "Raleway", sans-serif;
 }
-
-@media screen and (max-width: 768px) {
+/* // mobile */
+@media only screen and (max-width: 480px) {
   * {
     font-size: 6px;
   }
+}
+
+/* // tablet */
+@media only screen and (min-width: 481px) and (max-width: 820px) {
+}
+
+/* // tablet portrait mode */
+@media only screen and (min-width: 550px) and (max-width: 1024px) {
 }
