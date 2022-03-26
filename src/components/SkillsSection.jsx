@@ -61,15 +61,17 @@ const StyledSkillsSection = styled.div`
     position: relative;
     width: fit-content;
     margin: 0 auto;
+    background: #232323;
     h1 {
       color: #535353;
       opacity: 0.1;
       font-size: 9rem;
+      background: #232323;
     }
     h2 {
+      background: transparent;
       color: #f26b4e;
       font-size: 4rem;
-      /* padding-bottom: 3rem; */
       position: absolute;
       top: 50%;
       transform: translateY(-50%) translateX(60%);
@@ -83,6 +85,10 @@ const StyledSkillsSection = styled.div`
     overflow: hidden;
     line-height: 0;
     transform: rotate(180deg);
+    /* background: #f26b4e; */
+    svg {
+      background: #232323;
+    }
   }
 
   .wave svg {

@@ -95,6 +95,7 @@ const StyledExperienceSection = styled.div`
       font-size: 8rem;
     }
     h2 {
+      background: transparent;
       color: #f26b4e;
       font-size: 4rem;
       position: absolute;
@@ -110,6 +111,7 @@ const StyledExperienceSection = styled.div`
     overflow: hidden;
     line-height: 0;
     transform: rotate(180deg);
+    background: transparent;
   }
 
   .wave svg {

@@ -41,7 +41,7 @@ const ContactSection = () => {
           </StylesSocialLinks>
         </div>
       </StyledContactDetails>
-      <div class="custom-shape-divider-top-1643993701">
+      <div class="wave">
         <svg
           data-name="Layer 1"
           xmlns="http://www.w3.org/2000/svg"
@@ -65,9 +65,11 @@ const StyledContactSection = styled.footer`
   padding: 7rem 1rem 4rem 1rem;
   position: relative;
   h2 {
+    background: #f26b4e;
+
     font-size: 4rem;
   }
-  .custom-shape-divider-top-1643993701 {
+  .wave {
     position: absolute;
     top: 0;
     left: 0;
@@ -75,16 +77,20 @@ const StyledContactSection = styled.footer`
     overflow: hidden;
     line-height: 0;
     transform: rotate(180deg);
+    background: transparent;
+    svg {
+      background: transparent;
+    }
   }
 
-  .custom-shape-divider-top-1643993701 svg {
+  .wave svg {
     position: relative;
     display: block;
     width: calc(132% + 1.3px);
     height: 5rem;
   }
 
-  .custom-shape-divider-top-1643993701 .shape-fill {
+  .wave .shape-fill {
     fill: #232323;
   }
 `;
@@ -95,20 +101,27 @@ const StyledContactDetails = styled.div`
   justify-content: space-around;
   width: 80%;
   margin: 2rem auto;
+  background: #f26b4e;
+
   .detail {
+    background: #f26b4e;
     h4 {
+      background: #f26b4e;
       font-size: 1.5rem;
       padding: 1rem;
       position: relative;
     }
     p {
+      background: #f26b4e;
       font-size: 1.5rem;
     }
     a {
+      background: #f26b4e;
       text-decoration: none;
       color: white;
       font-size: 1.5rem;
       i {
+        background: #f26b4e;
         font-size: 2rem;
         padding: 0.5rem;
       }
@@ -116,18 +129,21 @@ const StyledContactDetails = styled.div`
   }
 
   #mail {
+    background: #f26b4e;
     position: absolute;
     font-size: 1.2rem;
     top: 35%;
     left: 25%;
   }
   #phone {
+    background: #f26b4e;
     position: absolute;
     font-size: 1.2rem;
     top: 35%;
     left: 1%;
   }
   #social {
+    background: #f26b4e;
     position: absolute;
     font-size: 1.2rem;
     top: 35%;
@@ -139,8 +155,10 @@ const StylesSocialLinks = styled.div`
   display: grid;
   grid-template-columns: auto auto auto;
   gap: 1rem;
+  background: #f26b4e;
   a {
     div {
+      background: #f26b4e;
       i {
         transition: all 0.3s ease;
         &:hover {

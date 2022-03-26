@@ -71,6 +71,7 @@ const StyledProjectsSection = styled.div`
   padding-bottom: 2rem;
   position: relative;
   .projects-wrapper {
+    background: #1f1f1f;
     position: relative;
     width: fit-content;
     margin: 0 auto;
@@ -80,6 +81,7 @@ const StyledProjectsSection = styled.div`
       font-size: 9rem;
     }
     h2 {
+      background: transparent;
       color: #f26b4e;
       font-size: 4rem;
       /* padding-bottom: 3rem; */
@@ -95,6 +97,9 @@ const StyledProjectsSection = styled.div`
     width: 100%;
     overflow: hidden;
     line-height: 0;
+    svg {
+      background: #1f1f1f;
+    }
   }
 
   .wave svg {
@@ -115,6 +120,7 @@ const StyledProjectContainer = styled.div`
   grid-template-columns: 50% 50%;
   width: 80%;
   margin: 2rem auto;
+  background: #1f1f1f;
   .project {
     /* height: 100%; */
     margin: 2rem;

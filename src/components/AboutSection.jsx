@@ -55,15 +55,18 @@ const StyledAbout = styled.div`
   text-align: center;
   position: relative;
   .about-wrapper {
+    background: #1f1f1f;
     position: relative;
     width: fit-content;
     margin: 0 auto;
     h1 {
+      background: #1f1f1f;
       color: #535353;
       opacity: 0.1;
       font-size: 9rem;
     }
     h2 {
+      background: transparent;
       color: #f26b4e;
       font-size: 4rem;
       /* padding-bottom: 3rem; */
@@ -87,6 +90,9 @@ const StyledAbout = styled.div`
     width: 100%;
     overflow: hidden;
     line-height: 0;
+    svg {
+      background: #1f1f1f;
+    }
   }
 
   .wave svg {
@@ -103,22 +109,31 @@ const StyledAbout = styled.div`
 
 const StyledDescription = styled.div`
   text-align: center;
+  background: #1f1f1f;
+
   .bio {
+    background: #1f1f1f;
     margin: 0 auto;
     width: 40%;
     /* text-align: left; */
     font-size: 1.2rem;
   }
+  h4 {
+    background: #1f1f1f;
+  }
   .education {
+    background: #1f1f1f;
     padding: 2rem 2rem;
     width: 70%;
     margin: 0 auto;
     h4 {
+      background: #1f1f1f;
       color: #f26b4e;
       font-weight: bolder;
       font-size: 2rem;
     }
     p {
+      background: #1f1f1f;
       padding: 0.5rem;
       text-align: center;
       font-size: 1.2rem;
@@ -127,43 +142,3 @@ const StyledDescription = styled.div`
 `;
 
 export default AboutSection;
-
-{
-  /* <div className="details">
-          <div className="detail">
-            <h5>Name</h5>
-            Jay Kania
-          </div>
-          <div className="detail">
-            <h5>Phone</h5>
-            +91 9537003277
-          </div>
-          <div className="detail">
-            <h5>Country</h5>
-            India
-          </div>
-          <div className="detail">
-            <h5>Email:</h5>
-            jaykania123@gmail.com
-          </div>
-        </div> */
-}
-
-// .details {
-//   padding-top: 3rem;
-//   display: flex;
-//   justify-content: space-between;
-//   align-items: center;
-//   flex-wrap: wrap;
-//   width: 40%;
-//   margin: 0 auto;
-//   .detail {
-//     padding: 2rem 2rem;
-//     width: 40%;
-//     h5 {
-//       color: #f26b4e;
-//       font-weight: bolder;
-//       font-size: 1.3rem;
-//     }
-//   }
-// }
