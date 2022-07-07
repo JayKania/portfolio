@@ -21,6 +21,27 @@ const ProjectsSection = () => {
           </a>
         </div>
         <div className="project">
+          <h2>Netflix Clone</h2>
+          <p>- An attempt to replicate the UI of Netflix.</p>
+          <p className="tags">
+            #react #styledComponents #zustand #firebase #tmdb-api
+          </p>
+          <a href="https://github.com/JayKania/netflix-clone" target={"_blank"}>
+            View on Github
+          </a>
+        </div>
+        <div className="project">
+          <h2>SBM Physio Clinic</h2>
+          <p>- A single page website for a physio center.</p>
+          <p className="tags">#react #styledComponents</p>
+          <a
+            href="https://github.com/JayKania/SBM_PhysioClinic"
+            target={"_blank"}
+          >
+            View on Github
+          </a>
+        </div>
+        <div className="project">
           <h2>E-Voting</h2>
           <p>
             - A decentalized way of casting votes. It's a web app built with the
