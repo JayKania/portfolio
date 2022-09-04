@@ -29,7 +29,7 @@ const StyledProject = styled.div`
   background: #232323;
   box-shadow: 0 6px 6px -4px #f26b4e;
   border-radius: 10px;
-  transition: transform 300ms ease, opacity 300ms ease;
+  transition: transform 400ms ease, opacity 400ms ease;
   h2 {
     padding: 2rem;
     font-size: 2rem;

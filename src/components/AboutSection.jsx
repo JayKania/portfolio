@@ -1,14 +1,23 @@
 import React from "react";
 import styled from "styled-components";
+import { useInView } from "react-intersection-observer";
 
 const AboutSection = () => {
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+    threshold: "0",
+  });
+
   return (
     <StyledAbout className="about-section" id="about">
       <div className="about-wrapper">
         <h1>About</h1>
         <h2>About Me</h2>
       </div>
-      <StyledDescription className="description">
+      <StyledDescription
+        ref={ref}
+        className={`description ${inView ? "opacity-1" : "opacity-0"}`}
+      >
         <h4>My name is Jay Kania</h4>
         <br />
         <p className="bio">
@@ -54,6 +63,7 @@ const StyledAbout = styled.div`
   padding-bottom: 2rem;
   text-align: center;
   position: relative;
+  overflow: hidden;
   .about-wrapper {
     background: #1f1f1f;
     position: relative;
@@ -110,6 +120,16 @@ const StyledAbout = styled.div`
 const StyledDescription = styled.div`
   text-align: center;
   background: #1f1f1f;
+  transition: transform 400ms ease, opacity 400ms ease;
+
+  &.opacity-0 {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  &.opacity-1 {
+    opacity: 1;
+    transform: translateY(0);
+  }
 
   h4 {
     background: #1f1f1f;

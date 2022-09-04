@@ -1,25 +1,38 @@
 import React from "react";
 import styled from "styled-components";
+import { useInView } from "react-intersection-observer";
 
 const ExperienceSection = () => {
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+    threshold: "0",
+  });
+
   return (
     <StyledExperienceSection className="experience-section" id="experience">
       <div className="experience-wrapper">
         <h1>Experience</h1>
         <h2>Work Experience</h2>
       </div>
-      <StyledExperienceContainer className="experience-container">
+      <StyledExperienceContainer
+        ref={ref}
+        className={`experience-container ${inView ? "opacity-1" : "opacity-0"}`}
+      >
         <div className="organization-name">
           <h2>Programmer Analyst Trainee</h2>
           <h3>Cognizant</h3>
-          <p>07/2021 - Present</p>
+          <p>07/2021 - 07/2022</p>
         </div>
         <div className="organization-desc">
           <ul>
             <li>
               Fixing various security realted flaws in the client application.
             </li>
-            <li>Constantly reviewed the changes done in the application .</li>
+            <li>Constantly reviewed the changes done in the application.</li>
+            <li>
+              Worked with Java, Spring Boot, Jsp, Bootstrap, Bitbucket and
+              Bamoboo
+            </li>
           </ul>
         </div>
         <div className="organization-name">
@@ -85,6 +98,7 @@ const StyledExperienceSection = styled.div`
   padding-bottom: 2rem;
   text-align: center;
   position: relative;
+  overflow: hidden;
   .experience-wrapper {
     position: relative;
     width: fit-content;
@@ -132,6 +146,17 @@ const StyledExperienceContainer = styled.div`
   padding: 20px;
   margin: 0 auto;
   padding-top: 3rem;
+
+  transition: transform 400ms ease, opacity 400ms ease;
+
+  &.opacity-0 {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  &.opacity-1 {
+    opacity: 1;
+    transform: translateY(0);
+  }
 
   .organization-name {
     display: flex;

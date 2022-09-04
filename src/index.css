@@ -6,6 +6,7 @@
   font-size: 14px;
   overflow-x: hidden;
   background: #232323;
+  /* outline: 1px solid green; */
 }
 body {
   font-family: "Noto Sans", sans-serif;

@@ -1,14 +1,23 @@
 import React from "react";
 import styled from "styled-components";
+import { useInView } from "react-intersection-observer";
 
 const SkillsSection = () => {
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+    threshold: "0",
+  });
+
   return (
     <StyledSkillsSection className="skills-section" id="skills">
       <div className="skills-wrapper">
         <h1>Skills</h1>
         <h2>Skills</h2>
       </div>
-      <SkillsContainer className="skills-container">
+      <SkillsContainer
+        ref={ref}
+        className={`skills-container ${inView ? "opacity-1" : "opacity-0"}`}
+      >
         <div className="react skill">
           <i class="fab fa-react fa-5x"></i>
         </div>
@@ -57,6 +66,7 @@ const StyledSkillsSection = styled.div`
   text-align: center;
   background: #232323;
   position: relative;
+  overflow: hidden;
   .skills-wrapper {
     position: relative;
     width: fit-content;
@@ -108,6 +118,17 @@ const SkillsContainer = styled.div`
   display: grid;
   grid-template-columns: auto auto auto auto;
   padding: 20px;
+  transition: transform 400ms ease, opacity 400ms ease;
+
+  &.opacity-0 {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  &.opacity-1 {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
   .skill {
     padding: 20px;
   }
