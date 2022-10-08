@@ -24,10 +24,11 @@ const AboutSection = () => {
           I am a Software Developer with good{" "}
           <span>problem solving skills</span> and a strong
           <span> team player</span>. <br />
-          Passionate about coding and learning new technologies. Currently I am
-          working as a Programmer Analyst Trainee at Cognizant Technology
-          Services. <br />I also have keen interest in learning the new{" "}
-          <span>web3 </span>
+          Passionate about coding and learning new technologies. Worked as a
+          Programmer Analyst Trainee at Cognizant Technology Services. Currently
+          pursuing my Masters Degree in Applied Computer Science from Dalhousie
+          University.
+          <br />I also have keen interest in learning the new <span>web3 </span>
           space which revolves around the concept of{" "}
           <span>decentralization</span>.
         </p>
@@ -37,6 +38,11 @@ const AboutSection = () => {
             Bachelor of Technology in Information Technology,
             <br />
             Birla Vishvakarma Mahavidhyalaya.
+          </p>
+          <p>
+            Masters of Applied Computer Science
+            <br />
+            Dalhousie University
           </p>
         </div>
       </StyledDescription>
