@@ -36,7 +36,7 @@ const StyledImage = styled.div`
   img {
     max-width: 100%;
     max-height: 100%;
-    object-fit: cover;
+    object-fit: contain;
     border: 5px solid #f26b4e;
     border-radius: 50%;
     transition: all 0.5s ease;
