@@ -7,7 +7,7 @@ const TitleSection = () => {
     <StyledTitleSection className="title-section">
       <StyledTitle className="title">
         <h3>Hello &#128075;, </h3>
-        <h2>I'm a Frontend Developer</h2>
+        <h2>I'm a Software Developer</h2>
         <a href="#contact">
           <button>CONTACT ME</button>
         </a>
