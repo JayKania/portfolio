@@ -2,6 +2,7 @@ import React from 'react';
 import { Calendar, MapPin, Award } from 'lucide-react';
 import { useTheme } from '../contexts/ThemeContext';
 import SectionHeading from './ui/SectionHeading';
+import resume from '../../assets/pdf/Jay_Kania.pdf'
 
 const About: React.FC = () => {
   const { isDarkMode } = useTheme();
@@ -75,7 +76,7 @@ const About: React.FC = () => {
 
           <div className="mt-8 flex justify-center">
             <a 
-              href="#" 
+              href={resume} 
               className={`inline-flex items-center px-6 py-3 rounded-full text-sm font-medium transition-all ${
                 isDarkMode 
                   ? 'bg-blue-600 text-white hover:bg-blue-700' 
